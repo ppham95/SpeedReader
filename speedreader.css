@@ -1,0 +1,80 @@
+/*
+
+Phu-Lam Pham 
+CSE 154 AO
+HW 3
+
+Stylesheet for SpeedReader Webpage
+
+*/
+
+#animationBox {
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+    font-size: 36pt;
+    line-height: 100px;
+    border: 2px solid #8EBEBE;
+    border-radius: 5px;
+}
+
+#animationBox, legend {
+    font-weight: bold;
+}
+
+#animationBox, textarea {
+    background-color: #FFFFFF;
+}
+
+body {
+    background-color: #EAF6F6;
+    font-family: Garamond, serif;
+    font-size: 12pt;
+}
+
+body, h1 {
+    text-align: center;
+}
+
+button:disabled {
+    background-color: lightgray;
+}
+
+button, textarea {
+    background-color: white;
+    border: solid 1px gray;
+}
+
+button, img {
+    width: 70px;
+}
+
+.controls, fieldset {
+    display: inline-block;
+}
+
+fieldset {
+    vertical-align: top;
+    border: 0;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+legend {
+    text-align: left;
+    border-bottom: 1px solid #8EBEBE;
+    width: 100%;
+    padding: 2px;
+}
+
+#validators {
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+}
+
+#validators p {
+    margin: 0;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+
+Phu-Lam Pham 
+CSE 154 AO
+HW 3
+
+SpeedReader webpage used to train how fast one can read with different reading speed (words per minute). Webpage also has the 
+ability to change font sizes of the text.
+
+-->
+<html>
+    <head>
+        <title>SpeedReader</title>
+        <link rel="stylesheet" type="text/css" href="speedreader.css" />
+        <script type="text/javascript" src="speedreader.js"></script>
+    </head>
+    
+    <body>
+        <h1>SpeedReader</h1>
+
+        <div id="animationBox"></div>
+
+        <div class="controls">
+                <fieldset>
+                    <legend>Play Controls:</legend>
+                    <button type="button" id="start">Start</button>
+                    <button type="button" id="stop" disabled>Stop</button>
+                </fieldset>
+        </div>
+
+        <div class="controls">
+            <form>
+                <fieldset>
+                    <legend>Speed:</legend>
+                    <select id="speed">
+                        <option value="300">200 wpm</option>
+                        <option value="200">300 wpm</option>
+                        <option value="171" selected="selected">350 wpm</option>
+                        <option value="150">400 wpm</option>
+                        <option value="133">450 wpm</option>
+                        <option value="120">500 wpm</option>
+                    </select>
+                </fieldset>
+            </form>
+        </div>
+        
+        
+        <div class="controls">
+            <form>
+                <fieldset>
+                    <legend>Size:</legend>
+                    <input type="radio" name="size" value="36" checked="checked" /> Medium
+                    <input type="radio" name="size" value="48" /> Big
+                    <input type="radio" name="size" value="60" /> Bigger
+                </fieldset>
+            </form>  
+        </div><br />
+
+        <div class="controls">
+            <form>
+                <fieldset>
+                    <legend>Input Text</legend>
+                        <textarea rows="10" cols="80" id="textBox"></textarea>
+                </fieldset>
+            </form>
+        </div>
+
+        <div id="validators">
+            <p>
+                <a href="https://webster.cs.washington.edu/validate-html.php"><img src="https://webster.cs.washington.edu/images/w3c-html-blue.png" alt="HTML Validator" /></a>
+                <a href="https://webster.cs.washington.edu/validate-css.php"><img src="https://webster.cs.washington.edu/images/w3c-css-blue.png" alt="CSS Validator" /></a>
+                <a href="https://webster.cs.washington.edu/jslint/?referer"><img src="https://webster.cs.washington.edu/images/w3c-js-blue.png" alt="JavaScript Validator" /></a>
+            </p>
+        </div>   
+    </body>
+</html>
